@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		A818995F2B9AACA40008E80C /* PopupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A818995E2B9AACA40008E80C /* PopupView.swift */; };
+		A8301CD72BAC680000D6DCD7 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = A8301CD62BAC680000D6DCD7 /* README.md */; };
 		A83F83372B90630D005F0F90 /* PopupMenuApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A83F83362B90630D005F0F90 /* PopupMenuApp.swift */; };
 		A83F83392B90630D005F0F90 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A83F83382B90630D005F0F90 /* ContentView.swift */; };
 		A83F833B2B906310005F0F90 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A83F833A2B906310005F0F90 /* Assets.xcassets */; };
@@ -18,6 +19,7 @@
 
 /* Begin PBXFileReference section */
 		A818995E2B9AACA40008E80C /* PopupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopupView.swift; sourceTree = "<group>"; };
+		A8301CD62BAC680000D6DCD7 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		A83F83332B90630D005F0F90 /* PopupMenu.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PopupMenu.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A83F83362B90630D005F0F90 /* PopupMenuApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopupMenuApp.swift; sourceTree = "<group>"; };
 		A83F83382B90630D005F0F90 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -51,6 +53,7 @@
 		A83F832A2B90630D005F0F90 = {
 			isa = PBXGroup;
 			children = (
+				A8301CD62BAC680000D6DCD7 /* README.md */,
 				A83F83352B90630D005F0F90 /* PopupMenu */,
 				A83F83342B90630D005F0F90 /* Products */,
 			);
@@ -160,6 +163,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A8301CD72BAC680000D6DCD7 /* README.md in Resources */,
 				A83F833F2B906310005F0F90 /* Preview Assets.xcassets in Resources */,
 				A83F833B2B906310005F0F90 /* Assets.xcassets in Resources */,
 			);
