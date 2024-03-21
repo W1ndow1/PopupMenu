@@ -7,19 +7,25 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A818995F2B9AACA40008E80C /* PopupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A818995E2B9AACA40008E80C /* PopupView.swift */; };
 		A83F83372B90630D005F0F90 /* PopupMenuApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A83F83362B90630D005F0F90 /* PopupMenuApp.swift */; };
 		A83F83392B90630D005F0F90 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A83F83382B90630D005F0F90 /* ContentView.swift */; };
 		A83F833B2B906310005F0F90 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A83F833A2B906310005F0F90 /* Assets.xcassets */; };
 		A83F833F2B906310005F0F90 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A83F833E2B906310005F0F90 /* Preview Assets.xcassets */; };
+		A85CFDDF2BA682E400956B0F /* SheetManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A85CFDDE2BA682E300956B0F /* SheetManager.swift */; };
+		A85CFDE12BAB422C00956B0F /* PopupViewModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = A85CFDE02BAB422C00956B0F /* PopupViewModifier.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A818995E2B9AACA40008E80C /* PopupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopupView.swift; sourceTree = "<group>"; };
 		A83F83332B90630D005F0F90 /* PopupMenu.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PopupMenu.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A83F83362B90630D005F0F90 /* PopupMenuApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopupMenuApp.swift; sourceTree = "<group>"; };
 		A83F83382B90630D005F0F90 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		A83F833A2B906310005F0F90 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A83F833C2B906310005F0F90 /* PopupMenu.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = PopupMenu.entitlements; sourceTree = "<group>"; };
 		A83F833E2B906310005F0F90 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		A85CFDDE2BA682E300956B0F /* SheetManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SheetManager.swift; sourceTree = "<group>"; };
+		A85CFDE02BAB422C00956B0F /* PopupViewModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopupViewModifier.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +39,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A818995B2B9954D50008E80C /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				A85CFDDE2BA682E300956B0F /* SheetManager.swift */,
+				A85CFDE02BAB422C00956B0F /* PopupViewModifier.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
 		A83F832A2B90630D005F0F90 = {
 			isa = PBXGroup;
 			children = (
@@ -52,8 +67,9 @@
 		A83F83352B90630D005F0F90 /* PopupMenu */ = {
 			isa = PBXGroup;
 			children = (
-				A83F83362B90630D005F0F90 /* PopupMenuApp.swift */,
-				A83F83382B90630D005F0F90 /* ContentView.swift */,
+				A85CFDE32BAC666B00956B0F /* SubView */,
+				A85CFDE22BAC648900956B0F /* View */,
+				A818995B2B9954D50008E80C /* Extension */,
 				A83F833A2B906310005F0F90 /* Assets.xcassets */,
 				A83F833C2B906310005F0F90 /* PopupMenu.entitlements */,
 				A83F833D2B906310005F0F90 /* Preview Content */,
@@ -67,6 +83,23 @@
 				A83F833E2B906310005F0F90 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		A85CFDE22BAC648900956B0F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A83F83362B90630D005F0F90 /* PopupMenuApp.swift */,
+				A83F83382B90630D005F0F90 /* ContentView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		A85CFDE32BAC666B00956B0F /* SubView */ = {
+			isa = PBXGroup;
+			children = (
+				A818995E2B9AACA40008E80C /* PopupView.swift */,
+			);
+			path = SubView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -97,7 +130,7 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1520;
-				LastUpgradeCheck = 1520;
+				LastUpgradeCheck = 1530;
 				TargetAttributes = {
 					A83F83322B90630D005F0F90 = {
 						CreatedOnToolsVersion = 15.2;
@@ -139,8 +172,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A818995F2B9AACA40008E80C /* PopupView.swift in Sources */,
 				A83F83392B90630D005F0F90 /* ContentView.swift in Sources */,
 				A83F83372B90630D005F0F90 /* PopupMenuApp.swift in Sources */,
+				A85CFDE12BAB422C00956B0F /* PopupViewModifier.swift in Sources */,
+				A85CFDDF2BA682E400956B0F /* SheetManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -181,6 +217,7 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
@@ -242,6 +279,7 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -269,6 +307,7 @@
 				CODE_SIGN_ENTITLEMENTS = PopupMenu/PopupMenu.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_ASSET_PATHS = "\"PopupMenu/Preview Content\"";
 				DEVELOPMENT_TEAM = AK7S865VNK;
 				ENABLE_HARDENED_RUNTIME = YES;
@@ -307,6 +346,7 @@
 				CODE_SIGN_ENTITLEMENTS = PopupMenu/PopupMenu.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_ASSET_PATHS = "\"PopupMenu/Preview Content\"";
 				DEVELOPMENT_TEAM = AK7S865VNK;
 				ENABLE_HARDENED_RUNTIME = YES;
